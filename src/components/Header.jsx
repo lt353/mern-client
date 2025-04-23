@@ -1,4 +1,4 @@
-import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 
 function Header() {
@@ -8,11 +8,11 @@ function Header() {
         <h1>Message Board</h1>
       </Col>
       <Col>
-        <LinkContainer to="/add">
+        <Link to="/add">
           <Button className="float-end">
             Add Message
           </Button>
-        </LinkContainer>
+        </Link>
       </Col>
     </Row>
   );
